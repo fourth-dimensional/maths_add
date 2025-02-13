@@ -57,6 +57,6 @@ jobs:
 
       - name: Publish release distributions to PyPI
         env:
-          PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }} # 从secrets中获取PyPI令牌
+          PYPI_TOKEN: ${{ secrets.maths_TOKEN }} # 从secrets中获取PyPI令牌
         run: |
           twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
